@@ -1,0 +1,12 @@
+{
+    "scriptFile": "main.py",
+    "bindings": [
+      {
+        "name": "timer",
+        "type": "timerTrigger",
+        "direction": "in",
+        "schedule": "0 */15 * * * *"
+      }
+    ],
+    "_comment": "The schedule follows a cron format where every 15 minutes will be denoted as: '0 */15 * * * *'"
+  }
