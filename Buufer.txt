@@ -5,3 +5,12 @@ I’m picking up the Power Apps investigation from Artem Fedorov now that he has
 I understand there was a call planned with Manpreet in the first week of December to go through the list of questions that Artem Fedorov shared above. Could you please confirm whether that call took place? If it did, would it be possible to share the notes or the answers to those questions with me? If it didn’t, I’m happy to arrange a new time that works for everyone so we can review them together.
 
 Thanks a lot for your help and for keeping me in the loop so we can move this forward.
+
+
+Hi Asih,
+
+Thanks for the suggestion, and thanks Manpreet for adding me.
+
+We’ve logged this under ticket [TICKET-123456] and will investigate the options for blocking Microsoft-managed keys in Key Vault, including any potential impact on existing workloads.
+
+We’ll share our findings and next steps in this thread once the analysis is complete.
