@@ -14,3 +14,16 @@ Thanks for the suggestion, and thanks Manpreet for adding me.
 We’ve logged this under ticket [TICKET-123456] and will investigate the options for blocking Microsoft-managed keys in Key Vault, including any potential impact on existing workloads.
 
 We’ll share our findings and next steps in this thread once the analysis is complete.
+
+
+Hi Stefan,
+
+Since early December, it looks like Mikhail and I have lost our read/Security Reader access to the production account. This might be related to recent changes around package migration or security hardening, but I’m not entirely sure what triggered it.
+
+At the moment, there is an urgent investigation of a production incident where I’m expected to support the analysis, but I’m blocked without this access. In parallel, we are working on new network policies and need to validate several points against production-specific data, which we also cannot currently confirm.
+
+Could you please help by approving or facilitating the restoration of read-only (Security Reader) access to the production account for Mikhail and myself, or let us know the correct process/person to contact for this?
+
+I fully understand the need for strict controls around production access and am happy to provide any additional justification, ticket references, or to work within a time-bound access window if needed.
+
+Thank you very much in advance for your support.
