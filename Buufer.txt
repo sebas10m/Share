@@ -27,3 +27,6 @@ Could you please help by approving or facilitating the restoration of read-only 
 I fully understand the need for strict controls around production access and am happy to provide any additional justification, ticket references, or to work within a time-bound access window if needed.
 
 Thank you very much in advance for your support.
+
+
+o open Azure Monitor → Activity log for the relevant subscription(s), set the last 60 days as the time range, and filter for delete operations on resource types Microsoft.Compute/virtualMachines (VMs) and Microsoft.HybridCompute/machines (Arc servers) to see if any were deleted.
