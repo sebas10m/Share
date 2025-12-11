@@ -58,3 +58,6 @@ Standardize architecture and governance. Define and enforce a unified reference 
 Implement AI service governance. Establish policies for Copilot and other AI features covering data access, prompt engineering and auditing to manage emerging risks.
 
 Execute remediation plans now. Roll out MFA, network isolation and Power BI governance immediately, assign ownership and track progress through Secure Score metrics.
+
+
+Fragmented use of M365 security tools. Under-utilizing built-in security services and relying on manual compensating controls drives missed detections, higher failure rates and unnecessary licence waste
