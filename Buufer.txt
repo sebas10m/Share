@@ -1,1 +1,60 @@
-Hi all, I’ve scheduled a “Power Platform Architecture – Kick-off Sync” for 9:00 as a 25-minute slot, but we can try to keep it to 15 minutes, as it’s been really hard to find a time when everyone is available this week. Praya, I’d be really happy if you can join before your OOO from 15 December – please let me know if this time is a blocker for anyone.
+Identity remains the primary attack surface. Over 80 % of breaches involve identity and the absence of MFA can enable a single account takeover to compromise your entire tenant
+coreview.com
+.
+
+Visibility gaps create blind spots. Without continuous asset discovery and comprehensive logging, attackers can enumerate and pivot through M365 services without leaving traces
+learn.microsoft.com
+vectra.ai
+.
+
+Network isolation and service governance are inconsistent. Power Platform often runs over public endpoints and unmanaged AI or Power BI usage leads to data sprawl and exposure
+forwardforever.com
+datatobiz.com
+.
+
+Missed detection and manual controls. Not deploying all available Microsoft 365 Defender and Sentinel capabilities forces reliance on manual controls and wastes licences, allowing threats to go unnoticed.
+
+Blind spots in business applications. Sentinel doesn’t ingest telemetry from Dynamics, Power Automate or Copilot activities, so unauthorized access, data exfiltration or prompt‑injection attacks can occur silently
+vectra.ai
+.
+
+Expanded attack surface for Power Platform. Lack of virtual network integration and firewall rules means Dataverse traffic traverses public endpoints, undermining zero‑trust principles
+forwardforever.com
+.
+
+Unmanaged Power BI usage. Departments create unapproved reports and datasets, resulting in shadow BI, data sprawl and untracked access
+datatobiz.com
+.
+
+Accounts without MFA. Leaving user and privileged accounts unenrolled in MFA gives attackers an easy path to credential compromise
+coreview.com
+tenable.com
+.
+
+Unremediated compromised accounts. Without Entra ID user‑risk policies, compromised credentials can remain active until manually discovered
+tenable.com
+.
+
+Adopt an integrated security architecture. Centralize Microsoft 365 Defender, Sentinel and Purview to close detection gaps and eliminate shadow‑IT
+learn.microsoft.com
+.
+
+Strengthen identity controls. Enforce MFA and user‑risk policies for every account to drastically reduce the risk of account takeover
+coreview.com
+tenable.com
+.
+
+Secure the Power Platform and govern data tools. Enable vNet integration and firewall rules for Dataverse and implement centralized Power BI governance to prevent shadow BI
+forwardforever.com
+datatobiz.com
+.
+
+Improve logging and monitoring. Expand Sentinel connectors for Dynamics, Power Automate and Copilot, capture Graph API reconnaissance events, and regularly review Secure Score and license utilization
+vectra.ai
+.
+
+Standardize architecture and governance. Define and enforce a unified reference architecture across all services to streamline operations and close remaining gaps.
+
+Implement AI service governance. Establish policies for Copilot and other AI features covering data access, prompt engineering and auditing to manage emerging risks.
+
+Execute remediation plans now. Roll out MFA, network isolation and Power BI governance immediately, assign ownership and track progress through Secure Score metrics.
