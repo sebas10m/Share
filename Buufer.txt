@@ -1,63 +1,28 @@
-Identity remains the primary attack surface. Over 80 % of breaches involve identity and the absence of MFA can enable a single account takeover to compromise your entire tenant
-coreview.com
-.
+Hello,
+Please find below a summary of the key points discussed during initial sync regarding the Power Platform today
 
-Visibility gaps create blind spots. Without continuous asset discovery and comprehensive logging, attackers can enumerate and pivot through M365 services without leaving traces
-learn.microsoft.com
-vectra.ai
-.
+1. How many applications are in use?
+•	We currently have a set of Power Apps and Power Automate (cloud and desktop) solutions deployed. 
+•	PowerBI is used on an exemption basis (e.g., TelDA use case) and is not part of the standard approved applications.
+•	Exact application counts, ownership and other statistics can be provided by Power Platform team per request via email if needed.
+2. Isolation and networking setup
+•	Configurations of applications that rely on the connection to external systems use on premises data gateway and are managed by L3 teams through controlled change processes.
+•	Connectivity to the platform is controlled via CyberArk, providing restricted administrative access.
+•	Applications and automation remain within the same region (no cross region or customer database integrations).
+•	Publishing of shared Custom Applications is supported per request, but each request undergoes UDA (User Developed Application(?)) governance review and approval before being allowed.
+3. How many tenants are in use?
+•	We operate on three tenants (DBG DEV, DBG UAT, DBG PROD) for the Power Platform. 
+4. What are the use cases?
+•	Private bank users have built apps fetching data from internal systems (Oracle Database).
+•	Cloud automation includes comparing two datasets (e.g., lists of active users vs. those with licenses), generating reports when discrepancies exceed a threshold (e.g., > 5% variance), and sending notifications automatically.
+•	Data management: moving files to SharePoint or SharePoint Drive and automating email workflows via Office 365/Outlook.
+•	Overall, use cases discussed revolve around internal productivity, license usage tracking, and automation of manual tasks rather than customer facing applications.
+5. How are those applications separated?
+•	Applications pass the UDA assessment 
+•	There is a clear separation between environments. Isolation between development, testing and production environments is managed by using multiple tenants.
+•	Access to applications is restricted by role based access control, and only authorized users can deploy or modify solutions.
 
-Network isolation and service governance are inconsistent. Power Platform often runs over public endpoints and unmanaged AI or Power BI usage leads to data sprawl and exposure
-forwardforever.com
-datatobiz.com
-.
-
-Missed detection and manual controls. Not deploying all available Microsoft 365 Defender and Sentinel capabilities forces reliance on manual controls and wastes licences, allowing threats to go unnoticed.
-
-Blind spots in business applications. Sentinel doesn’t ingest telemetry from Dynamics, Power Automate or Copilot activities, so unauthorized access, data exfiltration or prompt‑injection attacks can occur silently
-vectra.ai
-.
-
-Expanded attack surface for Power Platform. Lack of virtual network integration and firewall rules means Dataverse traffic traverses public endpoints, undermining zero‑trust principles
-forwardforever.com
-.
-
-Unmanaged Power BI usage. Departments create unapproved reports and datasets, resulting in shadow BI, data sprawl and untracked access
-datatobiz.com
-.
-
-Accounts without MFA. Leaving user and privileged accounts unenrolled in MFA gives attackers an easy path to credential compromise
-coreview.com
-tenable.com
-.
-
-Unremediated compromised accounts. Without Entra ID user‑risk policies, compromised credentials can remain active until manually discovered
-tenable.com
-.
-
-Adopt an integrated security architecture. Centralize Microsoft 365 Defender, Sentinel and Purview to close detection gaps and eliminate shadow‑IT
-learn.microsoft.com
-.
-
-Strengthen identity controls. Enforce MFA and user‑risk policies for every account to drastically reduce the risk of account takeover
-coreview.com
-tenable.com
-.
-
-Secure the Power Platform and govern data tools. Enable vNet integration and firewall rules for Dataverse and implement centralized Power BI governance to prevent shadow BI
-forwardforever.com
-datatobiz.com
-.
-
-Improve logging and monitoring. Expand Sentinel connectors for Dynamics, Power Automate and Copilot, capture Graph API reconnaissance events, and regularly review Secure Score and license utilization
-vectra.ai
-.
-
-Standardize architecture and governance. Define and enforce a unified reference architecture across all services to streamline operations and close remaining gaps.
-
-Implement AI service governance. Establish policies for Copilot and other AI features covering data access, prompt engineering and auditing to manage emerging risks.
-
-Execute remediation plans now. Roll out MFA, network isolation and Power BI governance immediately, assign ownership and track progress through Secure Score metrics.
+6. How keys are managed in M365 applications/systems? 
+DBKeyProtect BYOK/CMEK in in use for encryption and key management. Confirmed by Pragya-A.
 
 
-Fragmented use of M365 security tools. Under-utilizing built-in security services and relying on manual compensating controls drives missed detections, higher failure rates and unnecessary licence waste
