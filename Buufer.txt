@@ -1,28 +1,6 @@
-Hello,
-Please find below a summary of the key points discussed during initial sync regarding the Power Platform today
 
-1. How many applications are in use?
-•	We currently have a set of Power Apps and Power Automate (cloud and desktop) solutions deployed. 
-•	PowerBI is used on an exemption basis (e.g., TelDA use case) and is not part of the standard approved applications.
-•	Exact application counts, ownership and other statistics can be provided by Power Platform team per request via email if needed.
-2. Isolation and networking setup
-•	Configurations of applications that rely on the connection to external systems use on premises data gateway and are managed by L3 teams through controlled change processes.
-•	Connectivity to the platform is controlled via CyberArk, providing restricted administrative access.
-•	Applications and automation remain within the same region (no cross region or customer database integrations).
-•	Publishing of shared Custom Applications is supported per request, but each request undergoes UDA (User Developed Application(?)) governance review and approval before being allowed.
-3. How many tenants are in use?
-•	We operate on three tenants (DBG DEV, DBG UAT, DBG PROD) for the Power Platform. 
-4. What are the use cases?
-•	Private bank users have built apps fetching data from internal systems (Oracle Database).
-•	Cloud automation includes comparing two datasets (e.g., lists of active users vs. those with licenses), generating reports when discrepancies exceed a threshold (e.g., > 5% variance), and sending notifications automatically.
-•	Data management: moving files to SharePoint or SharePoint Drive and automating email workflows via Office 365/Outlook.
-•	Overall, use cases discussed revolve around internal productivity, license usage tracking, and automation of manual tasks rather than customer facing applications.
-5. How are those applications separated?
-•	Applications pass the UDA assessment 
-•	There is a clear separation between environments. Isolation between development, testing and production environments is managed by using multiple tenants.
-•	Access to applications is restricted by role based access control, and only authorized users can deploy or modify solutions.
+Power Apps and Power Automate solutions are deployed across three tenants (DEV, UAT and PROD), with Power BI used only on an exemption basis. Connections to external systems are controlled via on premises data gateways and CyberArk managed credentials and shared custom applications must pass UDA governance reviews before being published. Use cases focus on internal productivity, license usage tracking and automation of manual tasks rather than customer facing applications; sensitive data is protected through BYOK/CMK based encryption and role based access controls
 
-6. How keys are managed in M365 applications/systems? 
-DBKeyProtect BYOK/CMEK in in use for encryption and key management. Confirmed by Pragya-A.
+Evidence of unmanaged Power BI usage and shadow IT proliferation persists, with unsanctioned deployments emerging despite official guidance that Power BI is unavailable . Access to applications remains restricted to authorised users, but the platform team will need to improve oversight to address support requests from business units and ensure UDA compliance
 
-
+Access to applications remains restricted to authorised users, but the platform team will need to improve oversight to address support requests from business units to ensure security compliance 
